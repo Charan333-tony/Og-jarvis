@@ -15,7 +15,7 @@ MODEL = "openai/gpt-4o-mini"
 chat_history = []
 
 def ask_ai(message):
-messages = [
+    messages = [
 {
 "role": "system",
 "content": "You are Jarvis, a helpful AI assistant. Answer clearly and naturally."
