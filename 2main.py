@@ -72,7 +72,7 @@ return "All API keys failed."
 
 @app.get("/", response_class=HTMLResponse)
 def home():
-return """
+    return """
 
 <!DOCTYPE html><html>
 <head>
@@ -162,4 +162,4 @@ send();
 </html>
 """@app.get("/chat")
 def chat(msg: str):
-return {"reply": ask_ai(msg)}
+    return {"reply": ask_ai(msg)}
